@@ -11,10 +11,10 @@ export function CampaignCard({ campaign, compact = false }: { campaign: Campaign
       <CardContent className="space-y-3 p-4">
         <div>
           <h3 className="font-semibold text-slate-950">{campaign.name}</h3>
-          <p className="text-sm text-muted-foreground">{campaign.type} · modificata {campaign.updated}</p>
+          <p className="text-sm text-muted-foreground">{campaign.category} · modificata {campaign.updated}</p>
         </div>
         <CampaignStatusBadge status={campaign.status} />
-        <Button asChild variant="outline" className="w-full"><Link href={`/campaigns/${campaign.id}`}>Apri</Link></Button>
+        <Button asChild variant="outline" className="w-full"><Link href={`/campaigns/${campaign.slug}`}>Apri</Link></Button>
       </CardContent>
     </Card>
   );
