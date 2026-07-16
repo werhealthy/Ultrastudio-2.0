@@ -1,4 +1,2 @@
-import Link from "next/link";
-import { Button } from "@/components/ui/button";
-import { Badge } from "@/components/ui/badge";
-export function CharacterCard({ character }: any) { return <Link href={`/library/${character.id}`} className="block rounded-lg border bg-card p-4 shadow-sm transition hover:border-primary/40"><img src={character.src} className="mb-3 h-36 w-full rounded-md object-cover" alt=""/><b>{character.name}</b><p className="text-sm text-muted-foreground">{character.campaigns} campagne · {character.variants} varianti</p><Badge className="my-3" variant="secondary">{character.status}</Badge><Button className="w-full" size="sm" variant="outline">Apri</Button></Link> }
+import Link from "next/link";import { Badge } from "@/components/ui/badge";
+export function CharacterCard({ character }: any) {return <Link href={`/library/${character.id}`} className="block rounded-xl border bg-card p-4 shadow-sm transition hover:border-primary/40"><img src={character.src} className="mb-3 h-40 w-full rounded-lg object-cover" alt=""/><h3 className="text-sm font-medium">{character.name}</h3><p className="mt-1 text-sm text-muted-foreground">{character.campaigns} campagne · {character.variants} varianti</p><Badge className="mt-3" variant="secondary">{character.status}</Badge></Link>}
