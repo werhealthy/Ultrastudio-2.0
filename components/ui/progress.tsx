@@ -1,0 +1,1 @@
+"use client";import * as P from "@radix-ui/react-progress";export const Progress=({value=0}:{value?:number})=><P.Root className="h-2 w-full overflow-hidden rounded-full bg-muted"><P.Indicator className="h-full bg-primary transition-all" style={{transform:`translateX(-${100-value}%)`}}/></P.Root>;

@@ -1,0 +1,1 @@
+"use client";import * as T from "@radix-ui/react-tooltip";export const TooltipProvider=T.Provider;export const Tooltip=T.Root;export const TooltipTrigger=T.Trigger;export const TooltipContent=(p:T.TooltipContentProps)=><T.Portal><T.Content className="rounded-md bg-foreground px-3 py-1.5 text-xs text-background" {...p}/></T.Portal>;
