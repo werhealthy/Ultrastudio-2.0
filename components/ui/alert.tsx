@@ -1,0 +1,1 @@
+import { cn } from "@/lib/utils";export const Alert=({className,...p}:React.HTMLAttributes<HTMLDivElement>)=><div className={cn("rounded-lg border bg-accent p-4 text-sm text-accent-foreground",className)}{...p}/>;
